@@ -1,0 +1,121 @@
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: clamp(10.8vh, 9.9vh, 11vh);
+}
+
+#container{
+    margin-top: 4.5vh;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 15vh;
+    min-height: 70vh;
+    background-color: rgba(225, 225, 225, 0.5);
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+#title{
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 3rem);
+    padding-top: 20px;
+}
+
+#setup{
+    text-align: center;
+    font-size: clamp(2rem, 10vw, 5rem);
+    margin-top: 10vh;
+}
+
+#punchline{
+    text-align: center;
+    font-size: clamp(1.5rem, 7.5vw, 3rem);
+    margin-top: 5vh;
+}
+
+#buttons{
+    margin-top: -90px;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    padding-bottom: 0vh;
+    text-align: center;
+}
+
+.button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: clamp(4.75rem, 10vw, 15rem);
+    font-size: clamp(0.5rem, 1vw, 3rem);
+    background-color: rgba(225, 225, 225, 0.75);
+    border-radius: 15px;
+}
+
+.button:hover{
+    box-shadow: 4px 2px 1px, -4px 2px 1px, 4px -2px 1px, -4px -2px 1px;
+    background-color: rgba(225, 225, 225, 1);
+    background: linear-gradient(200deg,aqua,violet);
+    color: black;
+    font-weight: bold;
+}
+
+#anotherOne{
+    margin-left: 2%;
+    margin-right: 5%;
+}
+
+#all{
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+@keyframes setupAppear{
+    from{
+        color: rgba(0, 0, 0, 0);
+    }
+
+    30%{
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    to{
+        color: rgba(0, 0, 0, 1); 
+    }
+}
+
+@keyframes punchlineAppear{
+    from{
+        color: rgba(0, 0, 0, 0);
+    }
+
+    50%{
+        color: rgba(0, 0, 0, 0);
+    }
+
+    to{
+        color: rgba(0, 0, 0, 1); 
+    }
+}
+
+@keyframes disappear{
+    from{
+        color: rgba(0, 0, 0, 1);
+    }
+
+    to{
+        color: rgba(0, 0, 0, 0); 
+    }
+}
+
+@media(max-width: 780px){
+    #anotherOne{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+    #all{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
