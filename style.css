@@ -1,6 +1,6 @@
 /*position and appearance of body and container*/
 body{
-    background-image: url("background.jpg");
+    background-image: url("images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -113,6 +113,7 @@ body{
     }
 }
 
+/*responsivity attribute*/
 @media(max-width: 780px){
     #anotherOne{
         margin-left: 0%;
